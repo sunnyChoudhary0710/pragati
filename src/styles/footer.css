@@ -27,3 +27,26 @@ footer .name {
     font-weight: 500;
     font-size: 19px;
 }
+
+@media only screen and (max-width: 768px) {
+    footer > div {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 48px 16px;
+    }
+
+    footer .socials {
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer .socials {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

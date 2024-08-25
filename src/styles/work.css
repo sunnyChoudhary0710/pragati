@@ -16,8 +16,8 @@ article#pam-works::before {
     align-items: center;
     background-color: #7091e6;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -29,6 +29,12 @@ article#pam-works::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1000px) {
+    article#pam-works {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 600px) {

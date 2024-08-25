@@ -6,8 +6,12 @@ const Card = ({ image, heading, description }) => {
 	return (
 		<section
 			className="card"
+			style={{
+				background: `url(${image}) no-repeat`,
+				backgroundSize: 'cover'
+			}}
 		>
-            <img src={image} alt={heading} />
+            {/* <img src={image} alt={heading} /> */}
 			<div className="card-content">
 				<h3>{heading}</h3>
 				<p>{description}</p>

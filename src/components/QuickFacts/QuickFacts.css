@@ -1,76 +1,183 @@
 .quick-facts-wrapper {
-    position: relative;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Handlee';
+	position: relative;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Handlee";
 }
 
 .quick-facts-banner {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
 }
 
 .quick-facts-banner .quick-facts-banner-img {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 .quick-facts-banner .pam-standing {
-    position: absolute;
-    right: -60%;
+	position: absolute;
+	right: -60%;
 }
 
 .quick-facts-banner .quick-facts-banner-img .quick-facts-img {
-    z-index: 1;
+	z-index: 1;
 }
 
 .quick-facts-banner {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .quick-facts-banner .text1 {
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 200px;
-    text-align: center;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	width: 200px;
+	text-align: center;
 }
 
 .quick-facts-banner .text2 {
-    position: absolute;
-    top: 20%;
-    right: 15%;
-    width: 200px;
-    text-align: center;
+	position: absolute;
+	top: 20%;
+	right: 15%;
+	width: 200px;
+	text-align: center;
 }
 
 .quick-facts-banner .text3 {
-    position: absolute;
-    bottom: 15%;
-    right: 10%;
-    width: 300px;
-    text-align: center;
+	position: absolute;
+	bottom: 15%;
+	right: 10%;
+	width: 300px;
+	text-align: center;
 }
 
 .quick-facts-banner .text4 {
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    width: 200px;
-    text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	width: 200px;
+	text-align: center;
 }
 
 .quick-facts-banner .text5 {
-    position: absolute;
-    top: 45%;
-    left: 12%;
-    width: 300px;
-    text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 12%;
+	width: 300px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+	.quick-facts-banner .text1 {
+		left: 7%;
+	}
+
+	.quick-facts-banner .text2 {
+		top: 10%;
+		right: 7%;
+	}
+
+	.quick-facts-banner .text3 {
+		right: 6%;
+		width: 250px;
+	}
+
+	.quick-facts-banner .text5 {
+		left: 7%;
+		width: 250px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    .quick-facts-wrapper{
+        height: unset;
+    }
+	.quick-facts-banner {
+		flex-direction: column;
+		gap: 48px;
+	}
+	.quick-facts-banner .text1 {
+		position: relative;
+		width: 70%;
+		margin-top: 100px;
+        left: 0;
+	}
+
+	.quick-facts-banner .text2 {
+		position: relative;
+		width: 70%;
+        top: 0;
+        right: 0;
+	}
+
+	.quick-facts-banner .text3 {
+		position: relative;
+		width: 70%;
+        right: 0;
+	}
+
+	.quick-facts-banner .text4 {
+        position: relative;
+		width: 70%;
+        left: 0;
+        left: 0;
+	}
+
+	.quick-facts-banner .text5 {
+		position: relative;
+		width: 70%;
+        left: 0;
+	}
+
+    .quick-facts-banner .text1 > img {
+        position: absolute;
+        top: 10px;
+        left: -50px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .quick-facts-banner .text2 > img:first-of-type {
+        position: absolute;
+        top: -15px;
+        left: -57px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .quick-facts-banner .text2 > img:last-of-type {
+        position: absolute;
+        top: -8px;
+        right: -60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .quick-facts-banner .text4 > img {
+        position: absolute;
+        top: 8px;
+        left: -45px;
+        width: 50px;
+        height: 50px;
+	}
+
+    .quick-facts-banner .text5 > img:first-of-type {
+        position: absolute;
+        top: 15px;
+        left: -47px;
+	}
+
+    .quick-facts-banner .text5 > img:last-of-type {
+        position: absolute;
+        top: 15px;
+        right: -47px;
+	}
 }
