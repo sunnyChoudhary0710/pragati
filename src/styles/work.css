@@ -1,0 +1,38 @@
+article#pam-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 0 24px;
+    position: relative;
+}
+
+article#pam-works::before {
+    content: 'Work';
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7091e6;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+    article#pam-works {
+        grid-template-columns: 1fr;
+    }
+}
