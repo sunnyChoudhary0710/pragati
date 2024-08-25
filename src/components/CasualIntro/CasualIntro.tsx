@@ -12,13 +12,9 @@ const CasualIntro = () => {
 			</div> */}
 			<div className="ci-self-text">
                 <div className="ci-self-text-content">
-                    <div style={{
-                        fontSize: '36px'
-                    }}>"Hi there!</div>
+                    <div className="salutation" >"Hi there!</div>
                     <br />
-                    <div style={{
-                        fontSize: '32px'
-                    }}>I'm Pragati. I am new to the design game, but I am super exited about it and always eager to learn. I love coming up with fresh ideas and trying new things. I know I have a lot to learn but I am really committed to getting better. I am ready to work hard and show what I can do.</div>
+                    <div className="details" >I'm Pragati. I am new to the design game, but I am super exited about it and always eager to learn. I love coming up with fresh ideas and trying new things. I know I have a lot to learn but I am really committed to getting better. I am ready to work hard and show what I can do.</div>
                 </div>
 				{/* <img src="images/work-desk.png" alt="pragati work desk"></img> */}
 			</div>

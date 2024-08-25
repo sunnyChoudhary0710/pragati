@@ -34,19 +34,20 @@
     background-size: cover;
     position: absolute;
     bottom: -100px;
-    left: 166px;
-    width: 40%;
+    left: 5%;
+    width: min(576px, 40vw);
     display: flex;
+    height: fit-content;
+    padding: 24px;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 3 / 4;
     border-radius: 25px;
-    border: 2px solid white;
 }
 
 .ci-self-text::after {
     content: '';
     background-image: url("/images/arrow-dashed-bottom.png");
+    background-repeat: no-repeat;
     background-size:contain;
     background-position:center;
     position: absolute;
@@ -70,10 +71,93 @@
 }
 
 .ci-self-text-content {
-    height: 80%;
     width: 80%;
     border: 2px solid white;
     border-radius: 20px;
     font-family: 'Handlee';
     padding: 24px;
+}
+
+
+.ci-self-text-content  .salutation {
+    font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
+}
+
+.ci-self-text-content  .details {
+    font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
+}
+
+@media only screen and (max-width: 1200px) {
+    .ci-wrapper {
+        padding: 16px 24px;
+        margin: 96px 0;
+    }
+
+    .ci-self-portrait{
+        right: 70px;
+    }
+
+    .ci-self-text {
+        top: 269px;
+        bottom: 0;
+        width: 40vw;
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .ci-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .ci-self-portrait {
+        position: static;
+        transform: translate(0%, 0px)
+    }
+
+    .ci-self-portrait > img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .ci-self-portrait{
+        width: 100%;
+        position: static;
+        max-width: unset;
+        text-align: center;
+        left: 50%;
+        transform: unset;
+        top: -50%;
+        z-index: 1;
+    }
+
+    .ci-self-portrait::before{
+        display: none;
+    }
+
+    .ci-self-text {
+        position: static;
+        transform: unset;
+        width: 100%;
+        height: 600px;
+    }
+
+    .ci-self-text::after {
+        display: none;
+    }
+
+    .ci-self-text-content {
+        height: 90%;
+    }
+
+    .ci-self-text-content  .salutation {
+        font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
+    }
+
+    .ci-self-text-content  .details {
+        font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
+    }
 }

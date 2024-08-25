@@ -15,8 +15,8 @@ const QuickFacts = () => {
                 <img src="images/laugh_emoji.svg" alt="laugh" aria-hidden="true"></img>
             </div>
             <div className="text2">
-                My childhood deram was to become a Florist
                 <img src="images/flower.png" alt="laugh" aria-hidden="true"></img>
+                My childhood deram was to become a Florist
                 <img src="images/flower2.png" alt="laugh" aria-hidden="true"></img>
             </div>
             <div className="text3">
@@ -29,7 +29,6 @@ const QuickFacts = () => {
                 I am a horror movie addict but don't let me watch it alone...
                 <img src="images/ghost.png" alt="ghost" aria-hidden="true"/>
                 <img src="images/ghost2.png" alt="ghost" aria-hidden="true"/>
-                <img src="images/ghost3.png" alt="ghost" aria-hidden="true"/>
             </div>
             </div>
             

@@ -2,6 +2,8 @@ section.card {
 	border-radius: 30px;
 	position: relative;
 	overflow: hidden;
+	height: 80vh;
+	width: 100%;
 }
 
 section.card:nth-child(2n + 1) {
@@ -63,4 +65,14 @@ section.card .card-content p {
     font-family: 'Inter';
     font-weight: 500;
 	width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+	section.card:nth-child(2n + 1) {
+		margin-left: unset;
+	}
+	
+	section.card:nth-child(2n) {
+		margin-right: unset;
+	}
 }
