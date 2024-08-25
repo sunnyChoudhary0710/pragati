@@ -1,0 +1,11 @@
+.area-separator {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.area-separator > div {
+    width: 100%;
+    border-top: 2px solid var(--color-spacer);
+}
+

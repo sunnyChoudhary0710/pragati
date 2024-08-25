@@ -1,0 +1,76 @@
+.quick-facts-wrapper {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Handlee';
+}
+
+.quick-facts-banner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-facts-banner .quick-facts-banner-img {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-facts-banner .pam-standing {
+    position: absolute;
+    right: -60%;
+}
+
+.quick-facts-banner .quick-facts-banner-img .quick-facts-img {
+    z-index: 1;
+}
+
+.quick-facts-banner {
+    font-size: 24px;
+}
+
+.quick-facts-banner .text1 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 200px;
+    text-align: center;
+}
+
+.quick-facts-banner .text2 {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 200px;
+    text-align: center;
+}
+
+.quick-facts-banner .text3 {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 300px;
+    text-align: center;
+}
+
+.quick-facts-banner .text4 {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 200px;
+    text-align: center;
+}
+
+.quick-facts-banner .text5 {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    width: 300px;
+    text-align: center;
+}

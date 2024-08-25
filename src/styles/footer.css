@@ -1,0 +1,29 @@
+footer > div {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 74px 48px;
+}
+
+footer {
+    background-color: var(--color-primary);
+}
+
+footer .socials {
+    display: flex;
+    gap: 24px
+}
+
+footer .socials a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .name {
+    margin: 24px 0;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 19px;
+}
