@@ -9,25 +9,9 @@ const Footer = () => {
 					&#xa9; Handcrafted by <span className="name">Pragati Balhara</span>
 				</div>
 				<div className="socials">
-					<a href="www.gmail.com">LINKEDIN</a>
-					<a href="www.instagram.com">EMAIL</a>
-					<a href="www.instagram.com">INSTAGRAM</a>
-					{/* <a href="www.instagram.com">
-						<img
-							src={"/images/instagram.svg"}
-							alt="instagram"
-							width={30}
-							height={30}
-						/>
-					</a>
-					<a>
-						<img
-							src={"/images/linkedin.svg"}
-							alt="instagram"
-							width={30}
-							height={30}
-						/>
-					</a> */}
+					<a href="https://www.linkedin.com/in/pragatibalhara/">LINKEDIN</a>
+					<a href="mailto:pragatibalhara117@gmail.com">EMAIL</a>
+					<a href="https://www.instagram.com/pragati6577/?hl=en">INSTAGRAM</a>
 				</div>
 			</div>
 		</footer>

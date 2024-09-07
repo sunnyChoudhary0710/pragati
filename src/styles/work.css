@@ -1,4 +1,12 @@
 article#pam-works {
+    scroll-margin-top: 70px;
+}
+
+article#pam-works .work-title {
+    display: none;
+}
+
+article#pam-works .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
@@ -6,7 +14,7 @@ article#pam-works {
     position: relative;
 }
 
-article#pam-works::before {
+article#pam-works .card-container::before {
     content: 'Work';
     position: absolute;
     font-size: 40px;
@@ -32,13 +40,29 @@ article#pam-works::before {
 }
 
 @media only screen and (max-width: 1000px) {
-    article#pam-works {
+    article#pam-works .work-title {
+        display: block;
+        text-align: center;
+        padding: 16px 24px;
+        font-size: clamp(6rem, 5.2958rem + 3.0047vw, 8rem);
+        font-family: 'Harlow';
+        color: var(--color-accent);
+    }
+
+    article#pam-works .card-container {
         grid-template-columns: 1fr;
+    }
+
+    article#pam-works .card-container::before {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
     article#pam-works {
+        scroll-margin-top: 20px;
+    }
+    article#pam-works .card-container {
         grid-template-columns: 1fr;
     }
 }

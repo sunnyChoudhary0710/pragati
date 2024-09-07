@@ -99,6 +99,7 @@
 @media only screen and (max-width: 768px) {
     .quick-facts-wrapper{
         height: unset;
+		margin: 136px 0;
     }
 	.quick-facts-banner {
 		flex-direction: column;

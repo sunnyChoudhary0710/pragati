@@ -1,107 +1,112 @@
 .ci-wrapper {
     position: relative;
-    padding: 16px 74px;
-    min-height: 1000px;
-    margin: 128px 0;
+    margin: 74px 0;
+    padding: 36px;
 }
 
-.ci-self-portrait {
-    position: absolute;
-    max-width: 40vw;
-    height: auto;
-    right: 166px;
-    top: -360px;
+.ci-wrapper .review-bloc-mobile {
+    display: none;
 }
 
-.ci-self-portrait::before {
-    content: '';
-    background-image: url("/images/arrow-dashed.png");
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    left: -80%;
-    top: 20%;
-}
-
-.ci-self-portrait > img {
-    width: 100%;
-    height: 100%;
-}
-
-.ci-self-text {
-    background: url('/images/work-desk.png') no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: -100px;
-    left: 5%;
-    width: min(576px, 40vw);
-    display: flex;
-    height: fit-content;
-    padding: 24px;
-    justify-content: center;
-    align-items: center;
+.ci-wrapper .frame {
+    position: relative;
+    border: 1px solid white;
+    padding: 48px 24px;
+    display: grid;
+    gap: 24px;
     border-radius: 25px;
+    grid-template-columns: 2fr 1fr;
 }
 
-.ci-self-text::after {
+.ci-wrapper .frame::after{
     content: '';
-    background-image: url("/images/arrow-dashed-bottom.png");
+    background: url('/images/start-quote.png');
+    position: absolute;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size:contain;
-    background-position:center;
+    font-size: 128px;
+    color: var(--color-accent);
+    bottom: -27px;
+    right: 24px;
+    width: 115px;
+    height: 56px;
+    transform: rotate(180deg);
+    background-color: var(--bg-base);
+}
+
+.ci-wrapper .frame::before{
+    content: '';
+    background: url('/images/start-quote.png');
     position: absolute;
-    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 128px;
+    color: var(--color-accent);
+    top: -27px;
+    left: 24px;
+    width: 115px;
+    height: 56px;
+    background-color: var(--bg-base);
+}
+
+.ci-wrapper .frame .review-bloc {
+    position: absolute;
+    bottom: -18%;
+    width: 30%;
+    left: 24px;
+}
+
+.ci-wrapper .frame .text-bloc {
     height: 100%;
-    left: 70%;
-    bottom: -50%;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: 30px;
 }
 
-.ci-arrow-top {
-    position: absolute;
-    right: 500px;
-    top: -136px
+.ci-wrapper .frame .text-bloc .hello {
+    font-size: clamp(6rem, 5.2958rem + 3.0047vw, 8rem);
+    font-family: 'Harlow';
+    color: var(--color-accent);
 }
 
-.ci-arrow-bottom {
-    position: absolute;
-    right: 500px;
-    bottom: -136px;
-    transform: rotateY(-137deg);
+.ci-wrapper .frame .text-bloc .intro-text {
+    font-size: clamp(1.1875rem, 1.0775rem + 0.4695vw, 1.5rem);
+    font-style: italic;
+    font-family: 'Inter';
 }
 
-.ci-self-text-content {
-    width: 80%;
-    border: 2px solid white;
-    border-radius: 20px;
-    font-family: 'Handlee';
-    padding: 24px;
+.ci-wrapper .frame .image-bloc {
+    max-width: 426px;
+    height: 100%;
 }
 
-
-.ci-self-text-content  .salutation {
-    font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
+@media only screen and (max-width: 1300px) {
+    .ci-wrapper .frame .review-bloc {
+        bottom: -24%;
+        left: 24px;
+        width: 50%;
+    }
 }
 
-.ci-self-text-content  .details {
-    font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1050px) {
     .ci-wrapper {
         padding: 16px 24px;
-        margin: 96px 0;
+        margin: 56px 0;
     }
 
-    .ci-self-portrait{
-        right: 70px;
+    .ci-wrapper .frame {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .ci-self-text {
-        top: 269px;
-        bottom: 0;
-        width: 40vw;
-        left: 50px;
+    .ci-wrapper .frame .review-bloc {
+        display: none;
+    }
+
+    .ci-wrapper .review-bloc-mobile {
+        margin-top: 48px;
+        display: block;
     }
 }
 
@@ -113,51 +118,18 @@
         gap: 24px;
     }
 
-    .ci-self-portrait {
-        position: static;
-        transform: translate(0%, 0px)
+    .ci-wrapper .frame {
+        grid-template-columns: 1fr;
     }
 
-    .ci-self-portrait > img {
-        position: relative;
-        z-index: 1;
+    .ci-wrapper .frame .text-bloc {
+        order: 2;
+        align-items: center;
     }
 
-    .ci-self-portrait{
+    .ci-wrapper .frame .image-bloc {
         width: 100%;
-        position: static;
-        max-width: unset;
-        text-align: center;
-        left: 50%;
-        transform: unset;
-        top: -50%;
-        z-index: 1;
-    }
-
-    .ci-self-portrait::before{
-        display: none;
-    }
-
-    .ci-self-text {
-        position: static;
-        transform: unset;
-        width: 100%;
-        height: 600px;
-    }
-
-    .ci-self-text::after {
-        display: none;
-    }
-
-    .ci-self-text-content {
-        height: 90%;
-    }
-
-    .ci-self-text-content  .salutation {
-        font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
-    }
-
-    .ci-self-text-content  .details {
-        font-size: clamp(1.5rem, 0.8134rem + 1.5962vw, 2.25rem);
+        height: 100%;
+        margin: auto;
     }
 }
