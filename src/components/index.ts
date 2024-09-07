@@ -8,6 +8,7 @@ import Card from './Card/Card';
 import Work from './Work/Work';
 import CasualIntro from './CasualIntro/CasualIntro';
 import QuickFacts from './QuickFacts/QuickFacts';
+import Review from './Review/review';
 
 export {
     BasePage,
@@ -20,4 +21,5 @@ export {
     Work,
     CasualIntro,
     QuickFacts,
+    Review
 }

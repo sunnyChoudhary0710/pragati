@@ -9,10 +9,10 @@ function App() {
       <BasePage />
       <AreaSeparator spacer={74}/>
       <CasualIntro />
-      {/* <AreaSeparator spacer={74}/> */}
+      <AreaSeparator spacer={74}/>
       <QuickFacts />
       <AreaSeparator spacer={74}/>
-      <Work />
+      <Work id="work"/>
       <AreaSeparator spacer={74}/>
       
     </>

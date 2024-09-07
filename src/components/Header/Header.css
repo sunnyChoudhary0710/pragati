@@ -31,6 +31,19 @@ section#mobile {
 
     section#mobile {
         display: flex;
+        justify-content: space-between;
+    }
+
+    section#mobile .pb-logo {
+        font-size: 36px;
+        font-family: 'Harlow';
+        color: var(--color-accent);
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+
+    section#mobile .pb-logo:hover {
+        transform: scale(1.1);
     }
 
     .header-wrapper {
