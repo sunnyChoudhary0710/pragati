@@ -18,7 +18,7 @@ const CasualIntro = () => {
 						</p>
 						<br />
 						<p>
-							Let's collaborate and create something amazing togather!
+							Let's collaborate and create something amazing together!
 						</p>
 					</div>
 				</div>

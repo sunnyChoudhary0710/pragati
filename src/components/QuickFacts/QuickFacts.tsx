@@ -15,15 +15,15 @@ const QuickFacts = () => {
                 <img src="images/laugh_emoji.svg" alt="laugh" aria-hidden="true"></img>
             </div>
             <div className="text2">
-                <img src="images/flower.png" alt="laugh" aria-hidden="true"></img>
-                My childhood deram was to become a Florist
-                <img src="images/flower2.png" alt="laugh" aria-hidden="true"></img>
+                <img className="one" src="images/flower.png" alt="laugh" aria-hidden="true"></img>
+                My childhood dream was to become a Florist
+                <img className="two" src="images/flower2.png" alt="laugh" aria-hidden="true"></img>
             </div>
             <div className="text3">
-                I fond joy in the little things, keeping a playful approach to design (and life!)
+                I find joy in the little things, keeping a playful approach to design (and life!)
             </div>
             <div className="text4">
-                I have a bookshelf full of promises to start <img src="images/books.png" alt="book" aria-hidden="true"></img> reading!
+                I have a bookshelf full of promises to start reading! <img src="images/books.png" alt="book" aria-hidden="true"></img>
             </div>
             <div className="text5">
                 I am a horror movie addict but don't let me watch it alone...
