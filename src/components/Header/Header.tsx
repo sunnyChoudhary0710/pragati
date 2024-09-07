@@ -46,7 +46,7 @@ const Header = () => {
 	}
 
 	const redirectToIndex = () => {
-		window.location.href = 'https://66dc69b4b284890008997a96--glistening-travesseiro-b0e6b3.netlify.app/';
+		window.location.href = 'https://pragatibalhara.netlify.app/';
 	}
 
 	return (
