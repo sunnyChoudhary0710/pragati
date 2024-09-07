@@ -166,6 +166,7 @@ button.p-button:hover{
 
   .intro-wrapper .desc .desc-heading{
     align-self: center;
+    text-align: center;
   }
 
   .intro-wrapper .desc .desc-body {

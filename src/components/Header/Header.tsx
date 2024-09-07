@@ -14,12 +14,14 @@ const Menu = ({onClick, open}) => {
     )
 }
 
+const EmailSubject = "Hi Pragati! Let's have a chat.";
+
 
 const Header = () => {
     const [open, setOpen] = React.useState(false);
 
-	const scrollToTarget = (id, closeBeforeScroll) => {
-		if (closeBeforeScroll) {
+	const scrollToTarget = (id, closeBeforeAction) => {
+		if (closeBeforeAction) {
 			setOpen(!open)
 		}
 
@@ -34,23 +36,36 @@ const Header = () => {
 		}
 	}
 
+	const triggerEmail = (emailId, closeBeforeAction) => {
+		if (closeBeforeAction) {
+			setOpen(!open)
+		}
+		if (emailId) {
+			window.open(`mailto:${emailId}?subject=${EmailSubject}`)
+		}
+	}
+
+	const redirectToIndex = () => {
+		window.location.href = 'https://66dc69b4b284890008997a96--glistening-travesseiro-b0e6b3.netlify.app/';
+	}
+
 	return (
 		<header>
 			<section id="desktop" className="header-wrapper">
 				<Button type={"link"} label="About Me" onClick={()=>scrollToTarget('about-me', false)} />
 				<Button type={"link"} label="Work" onClick={()=>scrollToTarget('pam-works', false)} />
 				<Button type={"link"} label="Behance" onClick={()=>{navigateTo('')}}/>
-				<Button type={"p-button"} label="Let's Chat" onClick={()=>{navigateTo('https://google.com')}}/>
+				<Button type={"p-button"} label="Let's Chat" onClick={()=>{triggerEmail('pragatibalhara117@gmail.com', false)}}/>
 			</section>
 			<section id="mobile" className="header-wrapper">
-				<div className="pb-logo">PB</div>
+				<div className="pb-logo" onClick={redirectToIndex}>PB</div>
                 <Menu open={open} onClick={()=>{setOpen(!open)}}/>
 			</section>
             <div className={`h-menu ${open ? 'active' : ''}`}>
 				<Button type={"link"} label="About Me" onClick={()=>scrollToTarget('about-me', true)} />
 				<Button type={"link"} label="Work" onClick={()=>scrollToTarget('pam-works', true)} />
 				<Button type={"link"} label="Behance" onClick={()=>{navigateTo('')}}/>
-				<Button type={"p-button"} label="Let's Chat" onClick={()=>{navigateTo('https://google.com')}}/>
+				<Button type={"p-button"} label="Let's Chat" onClick={()=>{triggerEmail('pragatibalhara117@gmail.com', true)}}/>
             </div>
 		</header>
 	);

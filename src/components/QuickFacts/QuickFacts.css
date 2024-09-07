@@ -45,6 +45,7 @@
 
 .quick-facts-banner .text2 {
 	position: absolute;
+	display: relative;
 	top: 20%;
 	right: 15%;
 	width: 200px;
