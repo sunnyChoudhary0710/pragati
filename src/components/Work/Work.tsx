@@ -5,7 +5,7 @@ import "../../styles/work.css";
 
 const CardsData = [
 	{
-		image: "/images/flower-santuary-new.jpg",
+		image: "/images/flower-santuary-2.jpg",
 		heading: "The Flower Sanctuary",
 		description:
 			"A User-Friendly & Visually Appealing Flower Shop Website Design",
