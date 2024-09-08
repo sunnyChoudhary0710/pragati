@@ -31,7 +31,7 @@
     width: 115px;
     height: 56px;
     transform: rotate(180deg);
-    background-color: var(--bg-base);
+    /* background-color: var(--bg-base); */
 }
 
 .ci-wrapper .frame::before{
@@ -46,8 +46,7 @@
     left: 24px;
     width: 115px;
     height: 56px;
-    background-color: var(--bg-base);
-
+    /* background-color: var(--bg-base); */
 }
 
 .ci-wrapper .frame .review-bloc {
