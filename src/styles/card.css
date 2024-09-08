@@ -45,11 +45,11 @@ section.card:hover .card-content {
 }
 
 section.card:hover .card-content h3:not(.comingSoon) {
-	top: 35%;
+	top: 5%;
 }
 
 section.card:hover .card-content h3.comingSoon {
-	top: 27%;
+	top: 5%;
 }
 
 section.card .card-content h3 {

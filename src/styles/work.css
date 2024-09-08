@@ -17,7 +17,9 @@ article#pam-works .card-container {
 article#pam-works .card-container::before {
     content: 'Work';
     position: absolute;
-    font-size: 40px;
+    font-family: 'Harlow';
+    color: var(--color-accent);
+    font-size: 48px;
     font-weight: bold;
     display: flex;
     justify-content: center;
