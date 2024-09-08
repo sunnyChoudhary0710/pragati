@@ -32,7 +32,7 @@ const CasualIntro = () => {
 					</div>
 				</div>
 				<div className="image-bloc">
-					<img src="/images/pam-portrait.png" alt="pragati portrait" />
+					<img src="/images/pam-portrait.webp" alt="pragati portrait" />
 				</div>
 				<motion.div className="review-bloc"
 					initial={
@@ -58,9 +58,29 @@ const CasualIntro = () => {
 					<Review />
 				</motion.div>
 			</div>
-			<div className="review-bloc-mobile">
+			<motion.div className="review-bloc-mobile"
+				initial={
+					{
+						opacity: 0,
+						x: -100
+					}
+				}
+				whileInView={{
+					opacity: 1,
+					x: 0,
+					transition: {
+						duration: 1,
+						ease: easeOut,
+						type: "spring",
+						bounce: 0.5
+					}
+				}}
+				viewport={{
+					once: true,
+				}}
+			>
 				<Review />
-			</div>
+			</motion.div>
 		</div>
 	);
 };

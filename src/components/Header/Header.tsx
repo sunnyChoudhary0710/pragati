@@ -46,7 +46,7 @@ const Header = () => {
 	}
 
 	const redirectToIndex = () => {
-		window.location.href = 'https://pragatibalhara.netlify.app/';
+		window.location.replace('https://pragatibalhara.com');
 	}
 
 	return (
