@@ -63,10 +63,11 @@
     align-items: start;
     justify-content: start;
     margin-top: 30px;
+    overflow: hidden;
 }
 
-.ci-wrapper .frame .text-bloc .hello {
-    font-size: clamp(6rem, 5.2958rem + 3.0047vw, 8rem);
+.ci-wrapper .frame .text-bloc .hello > * {
+    font-size: clamp(5rem, 3.9437rem + 4.507vw, 8rem);
     font-family: 'Harlow';
     color: var(--color-accent);
 }
