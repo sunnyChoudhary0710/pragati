@@ -11,7 +11,7 @@ const QuickFacts = () => {
                 </div>
 
                 <div className="text1">
-                South Korea is my dream destination but by bank balance doesn't agree...
+                South Korea is my dream destination but my bank balance doesn't agree...
                 <img src="images/laugh_emoji.svg" alt="laugh" aria-hidden="true"></img>
             </div>
             <div className="text2">
