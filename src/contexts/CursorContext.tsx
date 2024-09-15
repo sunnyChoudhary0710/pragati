@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 export const CursorContext = createContext<any>({});
 
 const CursorProvider = ({children}) => {
-    const [cursor, setCursor] = useState({size: 0, background: 'var(--color-accent)'});
+    const [cursor, setCursor] = useState({size: 0, background: 'white'});
     const [isHovering, setIsHovering] = useState(false);
     const smallViewportIsActive = useMediaQuery({
         query: '(max-width: 1200px)'
@@ -41,7 +41,7 @@ const CursorProvider = ({children}) => {
     }
 
     const mouseLeaveHandler = () => {
-        setCursor({size: 0, background: 'var(--color-accent)'});
+        setCursor({size: 0, background: 'white'});
         setIsHovering(false);
     }
 
