@@ -21,6 +21,11 @@ footer .socials a {
     color: white;
 }
 
+footer .socials a:hover {
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
 footer .name {
     margin: 24px 0;
     font-family: 'Inter';

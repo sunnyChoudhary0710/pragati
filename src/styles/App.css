@@ -20,8 +20,6 @@ button.link {
 }
 
 button.link:hover {
-  background-color: white;
-  color: black;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -110,6 +108,15 @@ button.p-button:hover{
  width: 70%;
  font-size: 20px;
  margin-top: 36px;
+}
+
+.animated-cursor {
+  position: fixed;
+  border-radius: 50%;
+  z-index: 99;
+  pointer-events: none;
+  transition: all;
+  transition-duration: 300;
 }
 
 
