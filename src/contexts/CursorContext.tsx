@@ -8,7 +8,7 @@ const CursorProvider = ({children}) => {
     const [cursor, setCursor] = useState({size: 0, background: 'white'});
     const [isHovering, setIsHovering] = useState(false);
     const smallViewportIsActive = useMediaQuery({
-        query: '(max-width: 1200px)'
+        query: '(max-width: 1000px)'
     })
 
     const mouseX = useMotionValue(0);
